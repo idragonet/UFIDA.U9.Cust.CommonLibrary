@@ -1,4 +1,5 @@
-﻿using UFSoft.UBF.Util.Context;
+﻿using System.Collections.Generic;
+using UFSoft.UBF.Util.Context;
 
 namespace UFIDA.U9.Cust.CommonLibrary.Base
 {

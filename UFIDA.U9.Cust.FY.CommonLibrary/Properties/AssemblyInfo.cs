@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("UFIDA.U9.Cust.FY.CommonLibrary")]
+[assembly: AssemblyTitle("UFIDA.U9.Cust.CommonLibrary")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("UFIDA.U9.Cust.FY.CommonLibrary")]
+[assembly: AssemblyCompany("idragonet")]
+[assembly: AssemblyProduct("UFIDA.U9.Cust.CommonLibrary")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
