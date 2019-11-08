@@ -45,9 +45,34 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>X:\bin\UBF.System.dll</HintPath>
     </Reference>
+    <Reference Include="UFIDA.U9.Base.BaseBE, Version=25.5401.31176.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Yonyou\U9V60\Portal\ApplicationServer\Libs\UFIDA.U9.Base.BaseBE.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CBO.PubBE, Version=25.5401.31610.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Yonyou\U9V60\Portal\ApplicationServer\Libs\UFIDA.U9.CBO.PubBE.dll</HintPath>
+    </Reference>
+    <Reference Include="UFSoft.UBF.Business, Version=25.5401.28715.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Yonyou\U9V60\Portal\ApplicationServer\bin\UFSoft.UBF.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="UFSoft.UBF.PL, Version=25.5401.30227.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Yonyou\U9V60\Portal\ApplicationServer\bin\UFSoft.UBF.PL.dll</HintPath>
+    </Reference>
+    <Reference Include="UFSoft.UBF.Sys.Database, Version=25.5401.28777.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Yonyou\UBFV60\U9.VOB.Product.UBF\UBFStudio\Runtime\UFSoft.UBF.Sys.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="UFSoft.UBF.Util.DataAccess, Version=25.5401.28777.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Yonyou\U9V60\Portal\ApplicationServer\Libs\UFSoft.UBF.Util.DataAccess.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\UFIDA.U9.Base.Context.cs" />
+    <Compile Include="Find\UFIDA.U9.Base.Finder.Find.cs" />
     <Compile Include="Log\UFIDA.U9.Cust.Log.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
