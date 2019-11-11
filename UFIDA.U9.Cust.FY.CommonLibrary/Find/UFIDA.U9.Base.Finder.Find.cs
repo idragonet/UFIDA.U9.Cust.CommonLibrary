@@ -32,7 +32,7 @@ namespace UFIDA.U9.Cust.CommonLibrary.Find
         /// <summary>获取客户资料.</summary>
         /// <param name="code">料号</param>
         /// <returns></returns>
-        private static UFIDA.U9.CBO.SCM.Customer.Customer GetCustomer(string code)
+        public static UFIDA.U9.CBO.SCM.Customer.Customer GetCustomer(string code)
         {
             // var item = new UFIDAU9CBOSCMItemItemInfoData(); UFIDA::U9::CBO::SCM::Customer::Customer
 
@@ -49,7 +49,7 @@ namespace UFIDA.U9.Cust.CommonLibrary.Find
         /// <param name="code">The code.</param>
         /// <param name="orgId">默认当前组织</param>
         /// <returns></returns>
-        private static UFIDA.U9.CBO.SCM.Warehouse.Warehouse GetWH(string code, long orgId = 0)
+        public static UFIDA.U9.CBO.SCM.Warehouse.Warehouse GetWH(string code, long orgId = 0)
         {
             if (orgId == 0)
             {
@@ -67,7 +67,7 @@ namespace UFIDA.U9.Cust.CommonLibrary.Find
 
         /// <summary>获取当前记账期间.</summary>
         /// <returns></returns>
-        private static long GetSOBAccountingPeriod()
+        public static long GetSOBAccountingPeriod()
         {
             string sql = @"SELECT A1.ID FROM dbo.Base_SOBAccountingPeriod A1
 JOIN Base_SetofBooks A2 ON A1.SetofBooks=A2.ID
@@ -93,7 +93,7 @@ A1.Year=@Year AND A1.Code=@Code";
         /// <summary>查询组织.</summary>
         /// <param name="code">组织编码.</param>
         /// <returns></returns>
-        private static UFIDA.U9.Base.Organization.Organization GetOrg(string code)
+        public static UFIDA.U9.Base.Organization.Organization GetOrg(string code)
         {
             var oqlPar1 = new[]
             {
@@ -120,7 +120,7 @@ A1.Year=@Year AND A1.Code=@Code";
         /// <summary>获取供应商.</summary>
         /// <param name="code">供应商编码</param>
         /// <returns></returns>
-        private static UFIDA.U9.CBO.SCM.Supplier.Supplier GetSupplier(string code)
+        public static UFIDA.U9.CBO.SCM.Supplier.Supplier GetSupplier(string code)
         {
             var oqlPar1 = new[]
             {
