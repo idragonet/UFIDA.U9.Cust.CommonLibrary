@@ -106,7 +106,7 @@ A1.Year=@Year AND A1.Code=@Code";
         /// <summary>获取业务员.</summary>
         /// <param name="code">业务员编码.</param>
         /// <returns></returns>
-        private static UFIDA.U9.CBO.HR.Operator.Operators GetOperators(string code)
+        public static UFIDA.U9.CBO.HR.Operator.Operators GetOperators(string code)
         {
             var oqlPar1 = new[]
             {

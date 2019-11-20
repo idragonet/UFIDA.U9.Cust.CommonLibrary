@@ -31,7 +31,7 @@ namespace UFIDA.U9.Cust.CommonLibrary.Log
         /// <param name="type">The type.</param>
         public static void WriteLogDebug(string message, Type type = null)
         {
-            ILogger logger = LoggerManager.GetLogger("UFIDA.U9.Cust.CommonLibrary.Log");
+            var logger = LoggerManager.GetLogger("UFIDA.U9.Cust.CommonLibrary.Log");
             if (type != null)
             {
                 logger = LoggerManager.GetLogger(type);
