@@ -73,6 +73,7 @@
   <ItemGroup>
     <Compile Include="Base\UFIDA.U9.Base.Context.cs" />
     <Compile Include="Find\UFIDA.U9.Base.Finder.Find.cs" />
+    <Compile Include="Helper\UFIDA.U9.Helper.cs" />
     <Compile Include="Log\UFIDA.U9.Cust.Log.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
