@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace UFIDA.U9.Cust.CommonLibrary.Helper
+namespace UFIDA.U9.Cust.CommonLibrary
 {
 
 
