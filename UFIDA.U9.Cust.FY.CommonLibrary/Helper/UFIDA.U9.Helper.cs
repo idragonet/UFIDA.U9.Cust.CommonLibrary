@@ -50,6 +50,26 @@ namespace UFIDA.U9.Cust.CommonLibrary
             }
         }
 
+        /// <summary>
+        /// 得到字符串长度，一个汉字长度为2
+        /// </summary>
+        /// <param name="inputString">参数字符串</param>
+        /// <returns></returns>
+        public static int StrLength(string inputString)
+        {
+            System.Text.ASCIIEncoding ascii = new System.Text.ASCIIEncoding();
+            int tempLen = 0;
+            byte[] s = ascii.GetBytes(inputString);
+            for (int i = 0; i < s.Length; i++)
+            {
+                if ((int)s[i] == 63)
+                    tempLen += 2;
+                else
+                    tempLen += 1;
+            }
+            return tempLen;
+        }
+
 
     }
 }

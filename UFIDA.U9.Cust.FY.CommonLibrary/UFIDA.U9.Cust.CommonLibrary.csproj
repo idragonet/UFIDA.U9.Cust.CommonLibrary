@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +55,14 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Yonyou\U9V60\Portal\ApplicationServer\Libs\UFIDA.U9.CBO.PubBE.dll</HintPath>
     </Reference>
+    <Reference Include="UFIDA.U9.CS.UI.Controls, Version=25.5401.18759.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Yonyou\U9V60\Portal\UILib\UFIDA.U9.CS.UI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="UFIDA.U9.CS.UI.PDHelper, Version=25.5401.30517.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Yonyou\U9V60\Portal\UILib\UFIDA.U9.CS.UI.PDHelper.dll</HintPath>
+    </Reference>
     <Reference Include="UFSoft.UBF.Business, Version=25.5401.28715.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Yonyou\U9V60\Portal\ApplicationServer\bin\UFSoft.UBF.Business.dll</HintPath>
@@ -65,6 +75,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Yonyou\UBFV60\U9.VOB.Product.UBF\UBFStudio\Runtime\UFSoft.UBF.Sys.Database.dll</HintPath>
     </Reference>
+    <Reference Include="UFSoft.UBF.UI.IView, Version=25.5401.31104.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Yonyou\U9V60\Portal\bin\UFSoft.UBF.UI.IView.dll</HintPath>
+    </Reference>
     <Reference Include="UFSoft.UBF.Util.DataAccess, Version=25.5401.28777.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Yonyou\U9V60\Portal\ApplicationServer\Libs\UFSoft.UBF.Util.DataAccess.dll</HintPath>
@@ -74,9 +88,12 @@
     <Compile Include="Base\UFIDA.U9.Base.Context.cs" />
     <Compile Include="Find\UFIDA.U9.Base.Finder.Find.cs" />
     <Compile Include="Helper\UFIDA.U9.Helper.cs" />
+    <Compile Include="Helper\UIHelp.cs" />
     <Compile Include="Log\UFIDA.U9.Cust.Log.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="File\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
