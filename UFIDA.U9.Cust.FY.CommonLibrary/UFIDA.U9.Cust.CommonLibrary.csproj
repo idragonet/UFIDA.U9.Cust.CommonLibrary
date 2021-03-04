@@ -75,6 +75,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Yonyou\UBFV60\U9.VOB.Product.UBF\UBFStudio\Runtime\UFSoft.UBF.Sys.Database.dll</HintPath>
     </Reference>
+    <Reference Include="UFSoft.UBF.UI.Controls.Interface, Version=25.5401.26802.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Yonyou\U9V60\Portal\ApplicationServer\bin\UFSoft.UBF.UI.Controls.Interface.dll</HintPath>
+    </Reference>
     <Reference Include="UFSoft.UBF.UI.IView, Version=25.5401.31104.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Yonyou\U9V60\Portal\bin\UFSoft.UBF.UI.IView.dll</HintPath>

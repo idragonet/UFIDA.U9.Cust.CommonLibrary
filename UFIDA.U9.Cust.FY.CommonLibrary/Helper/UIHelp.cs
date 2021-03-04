@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI;
+using UFSoft.UBF.UI;
+using UFSoft.UBF.UI.IView;
 
 namespace UFIDA.U9.Cust.CommonLibrary
 {
 
     /// <summary>
-    /// 数据类型转换
+    /// 数据类型转换、数据判断、UI关闭
     /// </summary>
     public static class UIHelp
     {
@@ -112,5 +115,46 @@ namespace UFIDA.U9.Cust.CommonLibrary
             }
             return result;
         }
-	}
+
+
+
+        /// <summary>
+        /// 关闭窗口
+        /// </summary>
+        /// <param name="part"></param>
+        public static void CloseForm(IPart part)
+        {
+            string text = "window.close();";
+            AtlasHelper.RegisterAtlasStartupScript((Control)part.TopLevelContainer, part.GetType(), Guid.NewGuid().ToString(), text, true);
+        }
+
+        /// <summary>
+        /// 判断对象是否为null或者DBNull
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public static bool IsNullOrDBNull(object obj)
+        {
+            return obj == null || Convert.IsDBNull(obj);
+        }
+
+        /// <summary>
+        /// 对象转为long
+        /// </summary>
+        /// <param name="dbValue"></param>
+        /// <returns></returns>
+        public static long GetIDFromDBValue(object dbValue)
+        {
+            long result;
+            if (IsNullOrDBNull(dbValue) && long.TryParse(dbValue.ToString(), out var num))
+            {
+                result = num;
+            }
+            else
+            {
+                result = 0;
+            }
+            return result;
+        }
+    }
 }
